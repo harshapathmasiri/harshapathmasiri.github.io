@@ -1,93 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 100%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .profile-pic {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            margin-top: 20px;
-        }
-        h1 {
-            margin: 10px 0;
-            font-size: 24px;
-        }
-        p {
-            margin: 10px 0;
-            font-size: 16px;
-        }
-        .social-links {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .social-links li {
-            flex: 1 1 45%;
-            margin: 5px 0;
-        }
-        .social-links a {
-            display: block;
-            text-decoration: none;
-            color: #fff;
-            background-color: #000;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .social-links a:hover {
-            background-color: #555;
-        }
-        @media (min-width: 600px) {
-            .container {
-                max-width: 400px;
-            }
-            .profile-pic {
-                width: 150px;
-                height: 150px;
-            }
-            .social-links li {
-                flex: 1 1 30%;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="![Me](https://github.com/harshapathmasiri/harshapathmasiri.github.io/blob/556697f628a477d28b431361bc55267749179da1/Photograph.jpg)
-" class="profile-pic">
-        <h1>Harsha Pathmasiri</h1>
-        <p>I'm creating some stuffs on internet. Connect with me on social media!</p>
-        <ul class="social-links">
-            <li><a href="https://www.linkedin.com/in/harsha-pathmasiri-b68411133/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/harsha_pathmasiri?igsh=OGQ5ZDc2ODk2ZA==" target="_blank">Instagram</a></li>
-            <li><a href="https://web.facebook.com/harsha.padmasiri.1" target="_blank" target="_blank">Facebook</a></li>
-            <li><a href="https://www.tiktok.com/@harshapathmasiri?_t=8n5XckQhlyy&_r=1" target="_blank">TikTok</a></li>
-            <li><a href="https://www.youtube.com/channel/UCKjoCI4hSn_dxtWCFYEybVg" target="_blank">YouTube</a></li>
-            <li><a href="https://steamcommunity.com/id/harshamax" target="_blank">Steam</a></li>
-        </ul>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="dist/images/favicon.ico">
+        <title>Harsha Pathmasiri</title>
+        <link rel="stylesheet" href="dist/css/style.css">
+        <!-- ===================================
+        # My Portfolio
+        ==================================== -->
+    </head>
+    <body>
+        <div class="main">
+            <div class="avatar-wrapper">
+                <img src="dist/images/avatar.png" alt="avatar" class="avatar">
+            </div>
+
+            <div class="details-wrapper">
+                <div class="heading-wrapper">
+                    <h1>Hi, I'm Harsha Pathmasiri.</h1>
+                </div>
+
+                <div class="typed-wrapper">
+                    <span id="typed"></span>
+                </div>
+
+                <div class="social-icons-wrapper">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://github.com/harshapathmasiri" target="_blank">
+                                <img src="dist/images/github.png" alt="github">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://web.facebook.com/harsha.padmasiri.1" target="_blank">
+                                <img src="dist/images/facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/harsha_pathmasiri?igsh=OGQ5ZDc2ODk2ZA==" target="_blank">
+                                <img src="dist/images/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/HarshaPathmasi1/status/682793794601877507?mx=2" target="_blank">
+                                <img src="dist/images/twitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/harsha-pathmasiri-b68411133/" target="_blank">
+                                <img src="dist/images/linkedin.png" alt="linkedin">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="particles-js"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+        <script src="dist/js/script.js"></script>
+    </body>
 </html>
